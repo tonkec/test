@@ -611,11 +611,16 @@ section {
 	padding: 50px 30px; 
 	position: relative; 
 	-webkit-border-radius: 7px; 
-	 border-radius: 7px; 
+	 border-radius: 7px;
+	
 	
 	@include xs {
-		width: 450px; 
+		width: 100%; 
 	} 
+
+	@media (min-width: 500px) {
+		width: 450px; 
+	}
 
 	@include sm {
 		padding: 50px 45px; 
@@ -636,8 +641,12 @@ section {
 	}
 	line-height: 30px; 
 	font-family: "Raleway", sans-serif;
-	font-size: 11px;
+	font-size: 10px;
 	letter-spacing: 0;
+	
+	@include xs {
+		font-size: 11px; 
+	}
 	
 	@include sm {
 		font-size: 13px; 
