@@ -33,6 +33,12 @@ $grey-3: #e7eaec;
 	}
 }
 
+.hidden-xxs {
+	@include xsmobile {
+		display: none !important; 
+	}
+}
+
 %vcenter {
 	top: 50%;
 	position: relative;  
@@ -508,7 +514,11 @@ section {
 	} 
 
 	&.sdk-small-paragraph {
-		margin-bottom: 0; 
+		margin-bottom: 15px;
+		
+		@include lg {
+			margin-bottom: 0; 
+		} 
 	}
 }
 
@@ -596,7 +606,7 @@ section {
 	height: 320px; 
 	width: 100%; 
 	margin:  0 auto;
-	margin-bottom: 15px;  
+	margin-bottom: 50px;  
 	padding: 50px 30px; 
 	position: relative; 
 	-webkit-border-radius: 7px; 
@@ -609,6 +619,10 @@ section {
 	@include sm {
 		padding: 50px 45px; 
 		width: 490px; 
+	}
+
+	@include lg {
+		margin-bottom: 15px; 
 	}
 }
 
