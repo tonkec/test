@@ -68,7 +68,7 @@ $grey-3: #e7eaec;
 }
 
 .white-text {
-	color: #FFF; 
+	color: $white; 
 }
 
 .blue-text {
@@ -196,7 +196,7 @@ header {
 	&:hover,
 	&:focus {
 		background-color: darken($blue, 2%); 
-		color: #FFF; 
+		color: $white; 
 		@extend %reset_h;
 	}
 
