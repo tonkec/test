@@ -200,8 +200,11 @@ header {
 		@extend %reset_h;
 	}
 
-	@include sm {
+	@media (min-width: 500px) {
 		width: 330px; 
+	}
+
+	@include sm {
 		font-size: 26px; 
 	}
 }
