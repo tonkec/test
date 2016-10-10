@@ -179,7 +179,7 @@ header {
 
 .btn-header {
 	padding: 17px 0;
-	width: 330px; 
+	width: 100%; 
 	font-size: 15px;
 	color: $white;
 	font-family: "Raleway", sans-serif;
@@ -201,6 +201,7 @@ header {
 	}
 
 	@include sm {
+		width: 330px; 
 		font-size: 26px; 
 	}
 }
