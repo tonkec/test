@@ -10,6 +10,7 @@ $dark-blue: #022648;
 $white: #fff;
 $grey: #929292;
 $grey-2: #f3f7f9;
+$grey-3: #e7eaec;
 
 
 .p-0 {
@@ -20,6 +21,10 @@ $grey-2: #f3f7f9;
 	@include sm {
 		padding: 0 !important
 	}
+}
+
+.m-b-0 {
+	margin-bottom: 0 !important; 
 }
 
 .m-xs-0 {
@@ -86,6 +91,8 @@ $grey-2: #f3f7f9;
 
 .grey-background {
 	background-color: $grey-2; 
+	border-top: .5px solid $grey-3; 
+	border-bottom: .5px solid $grey-3; 
 }
 
 .white-background {
@@ -126,11 +133,11 @@ header {
 	text-transform: uppercase;
 	font-weight: 500; 
 	font-family: 'Raleway', sans-serif;
-	margin-bottom: 45px; 
+	margin-bottom: 35px; 
 	line-height: 1.4; 
+	letter-spacing: 0.05em;
 	
 	@include md {
-		line-height: 0; 
 		font-size: 60px; 
 	}
 
@@ -144,6 +151,7 @@ header {
 }
 
 .header-subheading {
+	letter-spacing: 0.05em;
 	font-weight: 700;   
 	margin: 0; 
 	text-transform: uppercase; 
@@ -190,6 +198,7 @@ header {
 		font-size: 26px; 
 	}
 }
+
 
 nav {
 	z-index: 2; 
@@ -278,6 +287,10 @@ section {
 	position: relative;   
 }
 
+.email {
+	margin-right: 7px; 
+}
+
 .cta-heading {
 	margin: 0; 
 	font-size: 19px;
@@ -285,14 +298,29 @@ section {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700; 
 	vertical-align: middle; 
-	margin-bottom: 15px;
-	
+	display: inline-block;
+	letter-spacing: 0.05em; 
 	@include sm {
-		margin-right: 20px;    
 		font-size: 22px; 
 	}  
 	@include md {
+		margin-right: 20px;    
 		margin-bottom: 0; 
+	}
+}
+
+.cta-heading-wrapper {
+	margin-bottom: 15px; 
+	@include sm {
+		margin-right:20px; 
+		margin-bottom: 0; 
+	}
+}
+
+.cta-heading-wrapper,
+.form-wrapper {
+	
+	@include sm {
 		display: inline-block;
 	}
 }
@@ -417,7 +445,10 @@ section {
 	left: 0;
 	right: 0;
 	text-align: center;  
+	
 	margin: 0;  
+	
+	letter-spacing: 0.05em; 
 	
 	&.m {
 		bottom: 45px; 
@@ -433,47 +464,60 @@ section {
 	font-size: 30px;
 	font-weight: 700; 
 	line-height: 1.4; 
-	margin-bottom: 50px; 
+	margin-bottom: 35px; 
+	letter-spacing: 0.05em; 
 	
 	@include sm {
 		margin-top: 185px; 
-		margin-bottom: 65px;
+		margin-bottom: 45px;
 		font-size: 40px; 
 	}
 }
 
 .feature-small-heading {
 	font-size: 30px;
-	margin-top: 30px;
+	margin-top: 35px;
 	font-weight: 500;   
-	margin-bottom: 5px; 
+	margin-bottom: 7px; 
 }
 
 .feature-paragraph {
 	font-size: 16px;
 	line-height: 28px;
 	font-family: "Raleway", sans-serif;
-	margin-bottom: 45px; 
+	margin-bottom: 30px; 
 	font-weight: 300; 
+	letter-spacing: 0.075em; 
 	
 	@include sm {
 		font-size: 18px; 
 	}
 	
 	&.first {
-		margin-top: 75px;
-		margin-bottom: 40px;  
+		margin-top: 60px;
+		margin-bottom: 30px;  
 	} 
 
 	&.second {
+		margin-top: 0;
 		margin-bottom: 0; 
-	}  
+	} 
+
+	&.sdk-paragraph {
+		margin-top: 60px; 
+	} 
+
+	&.sdk-small-paragraph {
+		margin-bottom: 0; 
+	}
 }
 
 .feature-subtext {
+	margin: 0; 
 	font-size: 18px;
 	line-height: 28px;
 	font-family: "Myriad Pro", sans-serif;
+	letter-spacing: 0.075em;
 }
 
 
@@ -518,6 +562,7 @@ section {
 	font-family: "Raleway", sans-serif;
     margin: 0 auto;
     padding: 0 15px; 
+    letter-spacing: 0.05em;
 
     @include sm {
     	font-size: 16px; 
@@ -551,7 +596,7 @@ section {
 	height: 320px; 
 	width: 100%; 
 	margin:  0 auto;
-	margin-bottom: 21px;  
+	margin-bottom: 15px;  
 	padding: 50px 30px; 
 	position: relative; 
 	-webkit-border-radius: 7px; 
@@ -629,7 +674,7 @@ section {
 }
 
 .btn-white {
-	padding: 15px 20px; 
+	padding: 9px 15px; 
 	background-color: $white;
 	color: $grey;
 	border: 1px solid $grey;
@@ -638,6 +683,7 @@ section {
 	font-family: "Raleway", sans-serif;   
 	-webkit-border-radius: 10px; 
 	   border-radius: 10px;
+	margin-top: 70px; 
 	
 	a {
 		text-decoration: underline;
@@ -646,11 +692,16 @@ section {
 
 	@include sm {
 		font-size: 18px;
+		letter-spacing: .075em 
 	}
 }
 
 .arrow-col {
 	margin-top: 150px;
+}
+
+.arrow-img {
+	margin: 0 auto; 
 }
 
 .waypoint {
