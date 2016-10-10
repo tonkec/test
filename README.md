@@ -28,8 +28,3 @@ Visit UI:
 http://localhost:3001
 http://192.168.1.105:3001
 ```
-
-Bower includes:
-- jquery 2.1.4
-- bootstrap
-- waypoints
