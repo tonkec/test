@@ -3,14 +3,6 @@ Tidas Landing Page
 
 Getting Started
 --------------------------------------------------
-Bower install:
-```
-bower install
-```
-NPM install:
-```
-sudo npm install
-```
 
 Start Gulp:
 ```
