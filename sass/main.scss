@@ -113,7 +113,7 @@ body {
 header {
 	height: 750px;
 	background-color: $blue-2;
-	background-image:linear-gradient(rgba(1, 58, 88, 0.9),rgba(11,89,131,.7)),url("/../img/header.png");
+	background-image:linear-gradient(rgba(1, 58, 88, 0.9),rgba(11,89,131,.7)),url("../img/header.png");
 	background-repeat: no-repeat;
 	-webkit-background-size: cover; 
 	 -o-background-size: cover; 
@@ -221,7 +221,7 @@ nav {
 	display: inline-block; 
 	height: 95px;
 	width: 68px; 
-	background-image: url("/../img/logo.png"); 
+	background-image: url("../img/logo.png"); 
 	-webkit-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover;
@@ -392,7 +392,7 @@ section {
 			position: absolute;
 			top: 0;
 			left: 0;
-			background-image: url("/../img/bg.png"); 
+			background-image: url("../img/bg.png"); 
 			background-repeat: no-repeat;
 			-webkit-background-size: cover; 
 			 -o-background-size: cover; 
