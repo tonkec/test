@@ -113,7 +113,7 @@ body {
 header {
 	height: 750px;
 	background-color: $blue-2;
-	background-image:linear-gradient(rgba(1, 58, 88, 0.9),rgba(11,89,131,.7)),url(../img/header.png);
+	background-image:linear-gradient(rgba(1, 58, 88, 0.9),rgba(11,89,131,.7)),url("/../img/header.png");
 	background-repeat: no-repeat;
 	-webkit-background-size: cover; 
 	 -o-background-size: cover; 
@@ -221,7 +221,7 @@ nav {
 	display: inline-block; 
 	height: 95px;
 	width: 68px; 
-	background-image: url("../img/logo.png"); 
+	background-image: url("/../img/logo.png"); 
 	-webkit-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover;
@@ -273,11 +273,11 @@ nav {
 		width: 0;
 		height: 1px;
 		background-color: $white; 
-		-webkit-transition: width .5s ease-in; 
-		-moz-transition: width .5s ease-in; 
-		-ms-transition: width .5s ease-in; 
-		-o-transition: width .5s ease-in; 
-		transition: width .5s ease-in; 
+		-webkit-transition: width .3s ease-in; 
+		-moz-transition: width .3s ease-in; 
+		-ms-transition: width .3s ease-in; 
+		-o-transition: width .3s ease-in; 
+		transition: width .3s ease-in; 
 	} 
 
 	&:hover:after,
@@ -354,12 +354,26 @@ section {
 	}
 }
 
+.btn-green {
+	background-color: $green-2;
+}
+
 .btn-cta {
 	height: 40px;
 	line-height: 26px;   
-	background-color: $green-2;
 	color: $white;
-	width: 90px;   
+	width: 90px;  
+	-webkit-transition-duration: all .4s ease-in; 
+	-moz-transition-duration: all .4s ease-in; 
+	-ms-transition-duration: all .4s ease-in; 
+	-o-transition-duration: all .4s ease-in; 
+	transition-duration: all .4s ease-in; 
+	
+	&:hover,
+	&:focus {
+		background-color: darken($green-2, 4%);
+		color: $white;  
+	} 
 }
 
 .feature-section {
@@ -378,7 +392,7 @@ section {
 			position: absolute;
 			top: 0;
 			left: 0;
-			background-image: url("../img/bg.png"); 
+			background-image: url("/../img/bg.png"); 
 			background-repeat: no-repeat;
 			-webkit-background-size: cover; 
 			 -o-background-size: cover; 
