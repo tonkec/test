@@ -252,7 +252,9 @@ nav {
 	}
 
 	@include sm {
-		margin-right: 50px; 
+		&.m {
+			margin-right: 50px; 			
+		}
 	}
 }
 
